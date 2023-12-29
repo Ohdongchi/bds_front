@@ -1,0 +1,51 @@
+@import "../../App.scss";
+
+.header {
+    .header_box {
+        width: 100%;
+
+        h1 {
+            color: black;
+        }
+
+        ul.main {
+            position: relative;
+
+            li {
+                display: inline-block;
+                position: relative;
+                width: 7em;
+                height: 22px;
+                line-height: 22px;
+                // padding: 4px 6px;
+                list-style: none;
+
+                input#check_button1 {
+                    display: none;
+                }
+                ul.sub {
+                    display: none;
+                    margin-top: 3px;
+
+                    li {
+                        display: inline-block;
+                        width: auto;
+                        height: 22px;
+                        line-height: 22px;
+                        padding: 2px 5px;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            // li:visited {
+            //     ul.sub {
+            //         display: block;
+            //         position: absolute;
+            //         width: $fullScreenSize;
+            //     }
+            // }
+
+        }
+    }
+}
