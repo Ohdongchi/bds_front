@@ -1,0 +1,48 @@
+@import "../../../App.scss";
+.menu_box {
+  width: 100%;
+  height: 34px;
+  line-height: 34px;
+
+  ul.main_menu {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    li.main_items {
+      display: inline-block;
+      width: auto;
+      position: relative;
+      height: 22px;
+      line-height: 22px;
+      padding: 4px 10px;
+      list-style: none;
+      z-index: 1;
+      label {
+        cursor: pointer;
+        &:hover {
+          border-bottom: 1px solid rgba(128, 128, 128, 0.8);
+          padding-bottom: 1px;
+          opacity: 0.8;
+          color: gray;
+        }
+      }
+    }
+  }
+
+  .sub_menu {
+    display: flex;
+    flex-direction: start;
+    justify-content: flex-start;
+    align-content: center;
+    font-size: 14px;
+    background-color: rgba(255, 103, 43, 0.788);
+    li.sub_items {
+      padding: 4px 10px;
+    }
+  }
+}
+
+.active {
+  background-color: rgba(255, 103, 43, 0.788);
+}
