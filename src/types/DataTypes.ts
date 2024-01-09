@@ -1,6 +1,12 @@
 export type subMenuTypes = {
     key: number,
-    list: string[],
+    list?: string[],
+    data?: subMenuListTypes[]
+}
+
+type subMenuListTypes = {
+    url: string,
+    keyword: string
 }
 
 export type subMenuProps = {
@@ -8,4 +14,4 @@ export type subMenuProps = {
     subMenus?: any;
     index?: any;
     changeIndexFn?: any;
-  };
+};
